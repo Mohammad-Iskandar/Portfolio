@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- google-fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"></head>
+    <!-- css files  -->
+    <link rel="stylesheet" href="CSS_Files/main.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <body>
+    <header class="container">
+        <nav>
+            <div class="logo">
+                <a href=""><img src="../Images/miLogo.png" alt="Mohammad_iskandar_logo"></a>
+            </div>
+            <ul class="links">
+                <i class="fa-solid fa-bars mobile-trigger"></i>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about_me">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li class="portfolioLi">
+                    <a href="#portfolio">Portfolio</a>
+                        <ul class="works">
+                            <li><a href="HTML_Files/MiskCampingWorks.html">Misk Camping</a></li>
+                            <li><a href="HTML_Files/MAAWorks.html">MAA</a></li>
+                            <li><a href="HTML_Files/CoursesHubWorks.html">Courses Hub</a></li>
+                        </ul> 
+                </li> 
+                <li><a href="#contactme">Contact Me</a></li>
+            </ul>
+            <div class="mobile-overlay">
+                <div class="mobile-content">
+                    <span class="mobile-close">&times;</span>
+                    <ul class="mobile-list">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about_me">About Me</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li class="portfolioLi">
+                            <a href="../index.html">Portfolio</a>
+                                <ul class="works">
+                                    <li><a href="HTML_Files/MiskCampingWorks.html">Misk Camping</a></li>
+                                    <li><a href="HTML_Files/MAAWorks.html">MAA</a></li>
+                                    <li><a href="HTML_Files/CoursesHubWorks.html">Courses Hub</a></li>
+                                </ul> 
+                        </li>
+                        <li><a href="#contactme">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container landing" id="home">
+
+        <div class="hero_section">
+            <div class="introduction">
+                <h1>Hi , I'm <br class="break" style="display: none;"> <span id="typed-text"></span></h1>
+                <h2>
+                    A Social Media Manager and Front-End developer with over 1 year of experience.  
+                    I help individuals and businesses build a strong and creative digital presence.
+                </h2>
+                <div class="cvAndSocial">
+                    <a href=""class="animated-button1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Download my CV <i class="fa-solid fa-file-arrow-down"></i></a>
+                    <div class="socialMediaLinks">
+                        <a href="https://www.facebook.com/mohammad.skendar?mibextid=ZbWKwL" class="facebook" alt ="Link For My Facebook Account"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/mohammad_h_iskandar?igshid=OGQ5ZDc2ODk2ZA==" class="instagram"alt ="Link For My Instagram Account"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" class="linkedin"alt ="Link For My Linkedin Account"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://t.me/Mohammadiskandar" class="telegram" alt ="Link For My telegram Account" ><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://wa.me/qr/UJWQ6JMLDIS3K1" class="whatsapp" alt ="Link For My whatsapp Account" ><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="photo">
+                <img src="Images/miImg.png" alt="Image" loading="lazy">
+                <img src="Images/ME-Mobile.png" alt="" loading="lazy" class="myImageForMobile">
+            </div>
+        </div>
+
+    </div>
+    <div class="waves"></div>
+
+    <div class="container about_me" id="about_me">
+        <div class="about_me_img">
+            <img src="/Images/AboutMEImg.jpg" alt="" loading="lazy" class="box hidden">
+        </div>
+        <div class="text box hidden">
+            <h1>
+            <span class="fast-flicker">So ,</span>  <span class="flicker"> Who </span> <span class="flicker"> Am </span> <span class="fast-flicker"> I </span> 
+            </h1>
+            <p>
+                I'm Mohammad Iskandar, a Information Technology Engineering student and a specialist in social media management.
+                I'm also a content creator sharing practical ways to make money online — and I’ve already helped over 300 people take their first step.
+                I always aim to deliver content that leaves a real impact and drives real results.
+                </p>
+        </div>
+    </div>
+
+    <div class="container portfolio" id="portfolio">
+        <h1 class="main-title box hidden">
+            <span class="flicker">What</span> <span class="fast-flicker">I</span> <span class="flicker"> ’ve </span> <span class="fast-flicker">Done</span>
+        </h1>
+        <div class="wrap miskcamping box hidden" data-animation="animate pop">
+            <div class="overlay miskcamping">
+                <div class="overlay-content box hidden " data-animation="animate slide-left delay-2">
+                    <h1 class="box hidden" data-animation="animate slide-left pop delay-4">Social Media Management & Content Creation for a Saudi Camp</h1>
+                </div>
+                <div class="image-content box hidden" data-animation="animate slide delay-5"></div>
+                <div class="dots box hidden" data-animation="animate">
+                    <div class="dot box hidden" data-animation="animate slide-up delay-6"></div>
+                    <div class="dot box hidden"data-animation="animate slide-up delay-7"></div>
+                    <div class="dot box hidden"data-animation="animate slide-up delay-8"></div>
+                </div>
+            </div>
+            <div class="text">
+                    <div class="inset"></div>
+                  <p>  I was responsible for planning, designing, and managing digital content for a Saudi youth camp organized by Misk Foundation.</p>
+                <p>My tasks included: <br>
+                    • Creating engaging social media posts tailored to the camp's target audience. <br>
+                    • Designing visual assets that reflected the camp's youthful and dynamic energy. <br>
+                    • Maintaining a consistent brand identity across platforms. <br>
+                    • Supporting live coverage and real-time updates during the camp. <br>
+                    
+                    </p>
+                <p>This project helped boost community engagement and gave the camp a vibrant online presence.</p>
+                <button class="see_more"><a  class="animated-button1" href="HTML_Files/MiskCampingWorks.html"><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>See Posts,Reels</a></button>
+            </div>
+        </div>
+        <div class="wrap MAA box hidden" data-animation="animate pop">
+            <div class="overlay MAA">
+                <div class="overlay-content box hidden"data-animation="animate slide-left delay-2">
+                    <h1 class="box hidden"data-animation="animate slide-left pop delay-4">Social Media Management & Content Creation </h1>
+                </div>
+                <div class="image-content box hidden"data-animation="animate slide delay-5"></div>
+                <div class="dots box hidden" data-animation="animate">
+                    <div class="dot box hidden"data-animation="animate slide-up delay-6"></div>
+                    <div class="dot box hidden"data-animation="animate slide-up delay-7"></div>
+                    <div class="dot box hidden"data-animation="animate slide-up delay-8"></div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="inset"></div>
+                <p>
+                    Through this project, I created educational content that covers most free and paid online income methods. 
+                </p>
+                <P>Like : <br>
+                    • UserTesting <br>
+                    • Russian Sites <br>
+                    • Sell Images <br>
+                    • Writing Articles <br>
+                    • Games <br>
+                    • freelancing Sites <br>
+                </P>
+                <p>
+                    I handled everything from designing posts and reels to producing long-form videos
+                    — all aimed at helping beginners start their online journey with clarity and confidence.
+                    Plus, I created a website to make things smoother and more structured.
+                </p>
+                <div class="buttons">
+                    <button class="see_more"><a  class="animated-button1" href="HTML_Files/MAAWorks.html"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>See Posts,Reels</a>
+                    </button>
+                    <button class="see_more"><a  class="animated-button1" href="https://mohammad-iskandar.github.io/MAA"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>See The Website</a>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="wrap courseshub box hidden" data-animation="animate pop">
+            <div class="overlay courseshub">
+                <div class="overlay-content box hidden" data-animation="animate slide-left delay-2">
+                    <h1 class="box hidden" data-animation="animate slide-left pop delay-4">Design posts And Reels</h1>
+                </div>
+                <div class="image-content box hidden" data-animation="animate slide delay-5"></div>
+                <div class="dots box hidden" data-animation="animate">
+                    <div class="dot box hidden" data-animation="animate slide-up delay-7"></div>
+                    <div class="dot box hidden" data-animation="animate slide-up delay-8"></div>
+                    <div class="dot box hidden" data-animation="animate slide-up delay-6"></div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="inset"></div>
+                <p>A project built to help students access top global courses at super affordable — and sometimes even free — prices.</p>
+                <p>I created the posts, reels, and handled the content to make the idea clear and engaging.</p>
+                <p>Plus, I Built a website to keep everything more organized and make the whole experience smoother.</p>
+                <div class="buttons">
+                    <button class="see_more"><a  class="animated-button1" href="HTML_Files/CoursesHubWorks.html"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>See Posts,Reels</a>
+                    </button>
+                    <button class="see_more"><a  class="animated-button1" href="https://mohammad-iskandar.github.io/CoursesHub"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>See The Website</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container services" id="services">
+        <h1 class="main-title box hidden">
+            <span class="flicker">What</span>  <span class="fast-flicker">I Can </span> <span class="flicker">Do </span> <span class="fast-flicker"> For You </span> 
+        </h1>
+        <!-- start services -->
+        <div class="services">
+            <div class="container">
+                <div class="box hidden">
+                    <div class="top">
+                        <i class="fa-brands fa-instagram fa-4x"></i>
+                        <h3>Social Media Management</h3>
+                        <p>Managing and optimizing social media accounts (Instagram, Facebook, TikTok, Snapchat) to grow your audience and boost engagement.</p>
+                    </div>
+                        <div class="info">
+                            <a href="#">Details</a>
+                        </div>
+                    </div>
+                <div class="box hidden">
+                    <div class="top">
+                        <i class="fa-solid fa-pen-nib fa-4x"></i>
+                        <h3>Content Creation</h3>
+                        <p>Designing eye-catching posts that reflect your brand’s voice using tools like Canva, Photoshop, and Illustrator.</p>
+                    </div>
+                        <div class="info">
+                            <a href="#">Details</a>
+                        </div>
+                </div>
+                <div class="box hidden">
+                    <div class="top">
+                        <i class="fa-solid fa-film fa-4x"></i>
+                        <h3>Video Editing</h3>
+                        <p>Editing engaging short-form content (Reels, YouTube Shorts) and full-length videos using CapCut and Premiere Pro.
+
+                        </p>
+                    </div>
+                <div class="info">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
+                <div class="box hidden">
+                    <div class="top">
+                        <i class="fa-solid fa-chart-line fa-4x"></i>
+                        <h3>Consulting & Strategy</h3>
+                        <p>Helping you plan, organize, and strategize content that aligns with your goals and speaks to your audience.</p>
+                    </div>
+                    <div class="info">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
+                <div class="box hidden">
+                    <div class="top">
+                        <i class="fa-solid fa-share-nodes fa-4x"></i>
+                        <h3>Support</h3>
+                        <p>Offering direct support and answering technical questions to help your community thrive online.</p>
+                    </div>
+                    <div class="info">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
+                <div class="box hidden">
+                    <div class="top">
+                        <i class="fa-solid fa-laptop-code fa-4x"></i>
+                        <h3>Front-End Development</h3>
+                        <p>From HTML to JS — I bring designs to life with clean, responsive, and scalable code.</p>
+                    </div>
+                    <div class="info">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
+    </div>
+        </div>
+        <!-- end services -->
+    </div>
+
+    <div class="container contactme" id="contactme">
+        <h1 class="main-title box hidden">
+            <span class="fast-flicker">Get</span> <span class="flicker">In</span> <span class="fast-flicker"> Touch </span>
+        </h1>
+        <!-- start contact me  -->
+        <div class="contact-me">
+        <form action="https://formspree.io/f/xgvkzyyv" method="POST" class="box hidden">
+            <div class="form-input">
+                <label for="f-name">First Name : </label><br>
+                <input type="text" id="f-name" name="f-name" required placeholder="John"><br><br>
+            </div>
+
+            <div class="form-input">
+            <label for="s-name">Second Name : </label><br>
+            <input type="text" id="s-name" name="f-name" required placeholder="Doe"><br><br>
+            </div>
+
+            <div class="form-input">
+            <label for="email">Your Email :</label><br>
+            <input type="email" id="email" name="email" required placeholder="Example@gmail.com"><br><br>
+            </div>
+
+            <div class="form-input">
+            <label for="message">Your Message :</label><br>
+            <textarea id="message" name="message" rows="5" required placeholder=""></textarea><br><br>
+            </div>
+          
+            <button type="submit" class="animated-button1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Send
+            </button>
+        </form>
+        <img src="../Images/Picsart_25-05-11_10-48-38-371.png" alt="" loading="lazy" class="box hidden">
+        </div>
+        <!-- End contact me  -->
+    </div>
+
+    <button class="goUp" alt="GoUP button" name="Go UP Button">
+        <a href="#home" class="animated-button1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-solid fa-up-long"></i>
+        </a>
+    </button>
+
+    <footer class="site-footer">
+        <div class="parAndIcons">
+            <p>Thanks for scrolling! 👋 Let’s build something cool together.</p>
+            <div class="social-icons">
+                <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="" class="telegram"><i class="fa-brands fa-telegram"></i></a>
+                <a href="" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <p class="madeWith">Made with 🤍 by Mohammad Iskandar</p>
+    </footer>
+        
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="JS_Files/typeScript.js"></script>
+    <script src="JS_Files/animations.js"></script> 
+</body>
+</html>
