@@ -621,7 +621,7 @@ nav ul li a:hover
     background-image: url(../Images/wave.svg);
     transform: rotate(180deg);
     position: relative;
-    top: -106px;
+    top: -126px;
 }
 @media (max-width :450px)
 {
@@ -782,6 +782,14 @@ h1.portfolio-title {
     50%{background-image: url(../Images/MAA-2.jpg);}
     75%{background-image: url(../Images/MAA-3.jpg);}
     100%{background-image: url(../Images/MAA-4.jpg);}
+}
+.portfolio .wrap.courseshub .inset 
+{
+    animation: change-bg-courseshub 6s linear infinite;
+} 
+@keyframes change-bg-courseshub {
+    0%{background-image: url(../Images/CS/p2.png);}
+    100%{background-image: url(../Images/CS/p1.png);}
 }
 .portfolio .dots {
 	position: absolute;
@@ -1593,10 +1601,6 @@ form button
 {
     width: 200px;
 }
-/* form .form-input
-{
-    width: 300px;
-} */
 input::placeholder,textarea::placeholder
 {
     color: #d1d1d1;
