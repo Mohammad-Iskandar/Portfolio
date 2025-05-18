@@ -414,9 +414,9 @@ nav ul li a:hover
         {
             position: relative;
             left: 0px;
-            top: 83%;
-            width: 230px;
-            height: 230px;
+            top: 57%;
+            width: 180px;
+            height: 170px;
             display: block;
             filter: brightness(1);
         } 
@@ -510,13 +510,14 @@ nav ul li a:hover
 }
 .about_me .about_me_img img
 {
-    width: 500px;
-    height: 580px;
+    width: 450px;
+    height: 540px;
     border-radius: 20%;
     box-shadow: 0px 0px 11px var(--special-text-color);
     top: 30px;
     position: relative;
     transition: var(--main-transition);
+    filter: brightness(1.2);
 }
 .about_me_container .socialMediaLinks
 {
@@ -550,7 +551,7 @@ nav ul li a:hover
     }
     .about_me .about_me_img img{
         width: 360px !important;
-        height: 390px !important;
+        height: 410px !important;
     
     }
     .about_me .text{
@@ -612,22 +613,27 @@ nav ul li a:hover
         width: 430px;
     }
 }
-.waves
+.spikes 
 {
-    display: block;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 310px;
-    background-image: url(../Images/wave.svg);
-    transform: rotate(180deg);
     position: relative;
-    top: -126px;
+}
+.spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -37px;
+    z-index: 1;
+    display: block;
+    height: 60px;
+    background-size: 30px 100%;
+    background-image: linear-gradient(135deg, var(--special-text-color) 25%, transparent 25%), linear-gradient(225deg, var(--special-text-color) 25%, transparent 25%);
+    background-position: 0 0;
 }
 @media (max-width :450px)
 {
-    .waves
-    {
-        height: 90px;
+    .spikes::after {
+        top: -100px;
     }
 }
 /* portfolio */
@@ -639,7 +645,7 @@ h1.portfolio-title {
     text-shadow: 7px 6px 20px var(--gradient-color-2) !important;
 }
 .portfolio .wrap h1 {
-    font-size: 40px;
+    font-size: 37px;
     color: white;
     width: 189px;
     margin: auto;
@@ -653,11 +659,6 @@ h1.portfolio-title {
     position: relative;
     top: 10px;
 }
-.portfolio .text .inset + p
-{
-    margin-bottom: 3.5rem !important;
-}
-
 .portfolio .wrap {
 	display: flex;
 	flex-wrap: nowrap;
@@ -887,6 +888,10 @@ h1.portfolio-title {
 	animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
 	animation-fill-mode: backwards;
 }
+.portfolio .text button.see_more a
+    {
+        font-size: 13px !important;
+    }
 /* Pop In */
 .portfolio .pop {
 	animation-name: pop;
@@ -1958,4 +1963,4 @@ header .links li.portfolioLi:hover ul.works
 .show {
     opacity: 1;
     transform: translateY(0);
-  }
+}
