@@ -551,7 +551,7 @@ nav ul li a:hover
     }
     .about_me .about_me_img img{
         width: 360px !important;
-        height: 410px !important;
+        height: 420px !important;
     
     }
     .about_me .text{
@@ -622,7 +622,7 @@ nav ul li a:hover
     position: absolute;
     right: 0;
     left: 0;
-    top: -37px;
+    top: -87px;
     z-index: 1;
     display: block;
     height: 60px;
@@ -633,7 +633,7 @@ nav ul li a:hover
 @media (max-width :450px)
 {
     .spikes::after {
-        top: -100px;
+        top: -200px;
     }
 }
 /* portfolio */
