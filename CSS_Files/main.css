@@ -633,7 +633,7 @@ nav ul li a:hover
 @media (max-width :450px)
 {
     .spikes::after {
-        top: -250px !important;
+        top: -200px !important;
     }
 }
 /* portfolio */
