@@ -192,8 +192,8 @@ nav ul li a:hover
 }
 @media (max-width: 767px) {
     nav .logo img{
-        width: 90px !important;
-        height: 6vh !important;
+        width: 90px ;
+        height: 6vh ;
         margin-left: 20px;
         transform: translateY(2px);
     }
@@ -633,7 +633,7 @@ nav ul li a:hover
 @media (max-width :450px)
 {
     .spikes::after {
-        top: -140px !important;
+        top: -90px !important;
     }
 }
 /* portfolio */
