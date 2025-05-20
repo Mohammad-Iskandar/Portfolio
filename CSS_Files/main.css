@@ -81,6 +81,11 @@ body {
     background-color: black;
     scroll-behavior: smooth;
 }
+.body_container
+{
+    max-width: 1366px;
+    margin: auto;
+}
 ::-webkit-scrollbar
 {
     width: 9px;
@@ -132,6 +137,7 @@ header{
     position: fixed;
     top: 10px;
     height: 6vh;
+    left: 0;
 }
 nav{
     display: flex;
@@ -551,7 +557,7 @@ nav ul li a:hover
     }
     .about_me .about_me_img img{
         width: 360px !important;
-        height: 420px !important;
+        height: 470px !important;
     
     }
     .about_me .text{
@@ -622,7 +628,7 @@ nav ul li a:hover
     position: absolute;
     right: 0;
     left: 0;
-    top: -37px;
+    top: -67px;
     z-index: 1;
     display: block;
     height: 60px;
