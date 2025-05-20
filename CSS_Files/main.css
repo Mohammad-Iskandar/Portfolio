@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 :root
 {
@@ -219,7 +221,7 @@ nav ul li a:hover
         display: none;
     }
 }
-  
+
 /* Tablet - Medium devices (768px to 1024px) */
 @media (min-width:768px) and (max-width:1024px) {
     nav ul li{
@@ -436,6 +438,7 @@ nav ul li a:hover
         .introduction
         {
             width: -webkit-fill-available;
+
             text-align: center;
         }
         .hero_section .introduction h1 ,
