@@ -1,25 +1,17 @@
-// تأكد من تنفيذ الكود بعد تحميل DOM
 document.addEventListener('DOMContentLoaded', function() {
-    // عناصر التحكم
     const menuButton = document.querySelector('.mobile-trigger');
     const mobileMenu = document.querySelector('.mobile-overlay');
     const closeButton = document.querySelector('.mobile-close');
-
-    // فتح القائمة
     if (menuButton) {
         menuButton.addEventListener('click', function () {
             mobileMenu.classList.add('active');
         });
     }
-
-    // إغلاق القائمة
     if (closeButton) {
         closeButton.addEventListener('click', function () {
             mobileMenu.classList.remove('active');
         });
     }
-
-    // إغلاق بالنقر خارج القائمة
     if (mobileMenu) {
         window.addEventListener('click', function (e) {
             if (e.target === mobileMenu) {
@@ -27,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // إغلاق القائمة عند الضغط على أحد الروابط في الموبايل
     const menuLinks = document.querySelectorAll('.mobile-overlay a[href^="#"]');
     menuLinks.forEach(link => {
         link.addEventListener('click', function () {
@@ -49,7 +39,9 @@ document.querySelectorAll('.box .info a').forEach(link => {
         paragraph.classList.add('animate-slide');
     });
 });
+
 //
+
 document.addEventListener('DOMContentLoaded', () => 
 {
     const elements = document.querySelectorAll('.box');
@@ -73,29 +65,66 @@ document.addEventListener('DOMContentLoaded', () =>
     );
 }
 );
-/////////////
+
+//
+
 const boxes = document.querySelectorAll('.box');
 
 const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+entries.forEach(entry => {
     if (entry.isIntersecting) {
-      // إضافة كلاس show (للشفافية أو الحركات العامة)
-      entry.target.classList.add('show');
-      entry.target.classList.remove('hidden');
+        entry.target.classList.add('show');
+        entry.target.classList.remove('hidden');
 
-      // تفعيل الأنيميشنات من data-animation
-      const animationClasses = entry.target.dataset.animation;
-      if (animationClasses) {
+    const animationClasses = entry.target.dataset.animation;
+    if (animationClasses) {
         entry.target.classList.add(...animationClasses.split(' '));
-      }
-
-      observer.unobserve(entry.target); // ما نعيد المشهد
     }
-  });
+
+    observer.unobserve(entry.target); 
+    }
+});
 }, {
-  threshold: 0.2
+threshold: 0.2
 });
 
 boxes.forEach(box => observer.observe(box));
 
+//change active class while scrolling
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("div[id]");
+    const navLinks = document.querySelectorAll("ul.links a[href^='#'], ul.mobile-list a[href^='#']");
+const observer = new IntersectionObserver(
+    (entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            const id = entry.target.getAttribute("id");
+navLinks.forEach((link) => {
+    link.classList.remove("active");
+        if (link.getAttribute("href") === `#${id}`) {
+            link.classList.add("active");
+    
+            }
+        });
+        }
+    });
+    },
+    {
+        threshold: 0.1,
+    }
+    );
+    sections.forEach((section) => {
+    observer.observe(section);
+    });
+});
+//pre loader animation
+window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+    preloader.style.pointerEvents = "none";
 
+    setTimeout(() => {
+    preloader.style.display = "none";
+    document.body.classList.remove("preload");
+    }, 1000); 
+});
