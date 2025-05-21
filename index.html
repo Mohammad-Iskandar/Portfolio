@@ -13,11 +13,18 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" type="x-icon" href="Images/XIcon.png">
-    <body class="body_container">
+    <body class="body_container preload">
+    <section class="loader" id="preloader">
+        <div class="slider" style="--i:0"></div>
+        <div class="slider" style="--i:1"></div>
+        <div class="slider" style="--i:2"></div>
+        <div class="slider" style="--i:3"></div>
+        <div class="slider" style="--i:4"></div>
+    </section>
     <header class="container">
         <nav>
             <div class="logo">
-                <a href=""><img src="Images/Logo.png" alt="Mohammad_iskandar_logo"></a>
+                <a href=""><img src="Images/Logo.png" alt="Mohammad_iskandar_logo" loading="lazy"></a>
             </div>
             <ul class="links">
                 <i class="fa-solid fa-bars mobile-trigger"></i>
@@ -58,7 +65,7 @@
     <div class="container landing" id="home">
 
         <div class="hero_section">
-            <div class="introduction">
+            <div class="introduction box hidden">
                 <h1>Hi , I'm <br class="break" style="display: none;"> <span id="typed-text"></span></h1>
                 <h2>
                     A Social Media Manager and Front-End developer with over 1 year of experience.  
@@ -81,8 +88,8 @@
                 </div>
             </div>
             <div class="photo">
-                <img src="Images/miImg.png" alt="Image" loading="lazy">
-                <img src="Images/ME-Mobile.png" alt="" loading="lazy" class="myImageForMobile">
+                <img src="Images/miImg.png" alt="Image" loading="lazy" class="box hidden">
+                <img src="Images/ME-Mobile.png" alt="" loading="lazy" class="myImageForMobile box hidden">
             </div>
         </div>
 
