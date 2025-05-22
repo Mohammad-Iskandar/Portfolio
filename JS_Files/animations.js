@@ -135,25 +135,3 @@ function hideLoader() {
     document.body.classList.remove("preload");
     }, 600);
 }
-//
-const mainImg = document.getElementById("main-img");
-
-if (mainImg && mainImg.complete) {
-    hideLoader();
-} else if (mainImg) {
-    mainImg.addEventListener("load", hideLoader);
-} else {
-    window.addEventListener("load", hideLoader);
-}
-
-function hideLoader() {
-    preloader.style.opacity = "0";
-    preloader.style.pointerEvents = "none";
-    setTimeout(() => {
-    preloader.style.display = "none";
-    document.body.classList.remove("preload");
-    }, 600);
-}
-
-
-
