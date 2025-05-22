@@ -1763,7 +1763,7 @@ color: var(--special-text-color);
     position: relative;
     top :7%;
     margin-bottom: 100px;
-    margin-top: 50 px ;
+    margin-top: 50 px !important;
 }
 .postsAndReels .posts ,
 .postsAndReels .reels 
@@ -1812,7 +1812,7 @@ color: var(--special-text-color);
     }
 	.postsAndReels
 {
-    margin-top: 80 px ! important ;
+    margin-top: 80 px !important ;
 }
 }
 header .links li.portfolioLi ul.works 
