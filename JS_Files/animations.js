@@ -118,13 +118,42 @@ navLinks.forEach((link) => {
     });
 });
 //pre loader animation
-window.addEventListener("load", function () {
-    const preloader = document.getElementById("preloader");
+const preloader = document.getElementById("preloader");
+const heroImg = document.getElementById("hero-img");
+
+if (heroImg.complete) {
+    hideLoader();
+} else {
+    heroImg.addEventListener("load", hideLoader);
+}
+
+function hideLoader() {
     preloader.style.opacity = "0";
     preloader.style.pointerEvents = "none";
-
     setTimeout(() => {
     preloader.style.display = "none";
     document.body.classList.remove("preload");
-    }, 1000); 
-});
+    }, 600);
+}
+//
+const mainImg = document.getElementById("main-img");
+
+if (mainImg && mainImg.complete) {
+    hideLoader();
+} else if (mainImg) {
+    mainImg.addEventListener("load", hideLoader);
+} else {
+    window.addEventListener("load", hideLoader);
+}
+
+function hideLoader() {
+    preloader.style.opacity = "0";
+    preloader.style.pointerEvents = "none";
+    setTimeout(() => {
+    preloader.style.display = "none";
+    document.body.classList.remove("preload");
+    }, 600);
+}
+
+
+
