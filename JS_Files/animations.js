@@ -118,20 +118,14 @@ navLinks.forEach((link) => {
     });
 });
 //pre loader animation
-const preloader = document.getElementById("preloader");
-const heroImg = document.getElementById("hero-img");
 
-if (heroImg.complete) {
-    hideLoader();
-} else {
-    heroImg.addEventListener("load", hideLoader);
-}
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  preloader.style.opacity = "0";
+  preloader.style.pointerEvents = "none";
 
-function hideLoader() {
-    preloader.style.opacity = "0";
-    preloader.style.pointerEvents = "none";
-    setTimeout(() => {
+  setTimeout(() => {
     preloader.style.display = "none";
     document.body.classList.remove("preload");
-    }, 600);
-}
+  }, 1000); 
+});
